@@ -16,8 +16,10 @@ const Hero = () => {
               <span className="text-secondary   font-semibold">Telecom</span>
             </h4>
             <h1 className="text-sm lg:text-xl ">
-              Transform Your Business Telecommunications. It Is An ISO9001 And
-              ISO 14001 And ISO 45001 Certified Company
+              We are an ISO 9001, ISO 14001, and ISO 45001 certified company,
+              committed to elevating your business telecommunications with
+              top-tier solutions. Trust us to deliver excellence and reliability
+              in every project.
             </h1>
             {/* <h1 className='text-xl lg:text-4xl text-secondary'>
                         "Guiding Healthcare Excellence: Your Partner in Strategic Solutions for a Healthier Tomorrow."
