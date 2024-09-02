@@ -4,7 +4,7 @@ import Container from "../Container/Container";
 const WhatWeDo = () => {
   return (
     <Container>
-      <section className="flex flex-col md:flex-row items-center py-8 ">
+      <section className="flex flex-col md:flex-row justify-between items-center py-8 ">
         {/* Right Side: Content */}
         <div className="w-full md:w-1/2 py-5">
           <div className="px-4">

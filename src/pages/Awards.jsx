@@ -21,7 +21,7 @@ const Awards = () => {
     <div>
       <TopBanner
         pageName={"Our Awards"}
-        img={"https://supportbrightviewtelecom.netlify.app/about.jpg"}
+        img={"/Banners/award.jpg"}
         heading={"Awards"}
       />
       <Container>

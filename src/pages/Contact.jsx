@@ -7,7 +7,7 @@ const Contact = () => {
         <div className='bg-[#f5f5f5]'>
             <TopBanner
                 heading={"Contact Us"}
-                img={"https://previews.123rf.com/images/kritchanut/kritchanut1507/kritchanut150700280/42675173-doctor-hand-touching-contact-us-sign-on-virtual-screen-medical-support-and-service-concept.jpg"} />
+                img={"/Banners/contact.jpg"} pageName={"Contact"}/>
             <Container>
                 <div className='py-24 font-syne space-y-20'>
                     <div className='text-center  space-y-3'>

@@ -4,7 +4,7 @@ import Container from "../Container/Container";
 const WhoWeAre = () => {
   return (
     <Container>
-      <section className="flex flex-col md:flex-row items-center py-8 ">
+      <section className="flex flex-col md:flex-row justify-between items-center py-8 ">
         {/* Left Side: Image */}
         <div className="w-full md:w-[40%]">
           <img
@@ -12,7 +12,6 @@ const WhoWeAre = () => {
             alt="Description of the image"
             className="rounded-lg shadow-lg w-full h-auto"
           />
-          a
         </div>
 
         {/* Right Side: Content */}
