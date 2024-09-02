@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.remove_scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #1370b5;
+    border-radius: 5px;
+    scroll-behavior: smooth;
+}
+.custom-scrollbar::-webkit-scrollbar-track-piece {
+    background: lightgray;
+}
+
+.profile-container-height {
+    height: calc(100vh - 100px);
+}
+
+.hexagon {
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+.hero {
+    height: calc(100vh - 100px);
+}
+
+.nav-shape {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* Login Page */
+.login-main {
+    height: calc(100vh - 100px);
+}
