@@ -23,7 +23,7 @@ const Contact = () => {
                             <div>
                                 <h3 className='text-2xl font-semibold font-syne'>Address</h3>
                                 <p>
-                                    6420 Stoneridge Mall Rd, Pleasanton, CA 94588
+                                    S 11-12, SECOND FLOOR ADARSHININ PLAZA 91, ADHCHINI NEW DELHI- 110017 INDIA
                                 </p>
                             </div>
                         </div>
@@ -32,7 +32,7 @@ const Contact = () => {
                             <div>
                                 <h3 className='text-2xl font-semibold font-syne'>Phone</h3>
                                 <p>
-                                    (+1) 9088783691
+                                    +91-9891858137
                                 </p>
                             </div>
                         </div>
@@ -41,14 +41,19 @@ const Contact = () => {
                             <div className='text-sm'>
                                 <h3 className='text-2xl font-semibold font-syne'>Email</h3>
                                 <p>
-                                    sai.kotla1@gmail.com
+                                    info@brightviewtelecom.com
+
+
                                 </p>
                                 <p>
-                                    sai.kotla@outlook.com
+                                    jogender.singh@bvtpl.in
+
                                 </p>
                                 <p>
-                                    info@healthFrogs.com
+                                    s.jogender@gmail.com
+
                                 </p>
+                                <p> jogender.singh@bvtpl.in</p>
                             </div>
                         </div>
 
