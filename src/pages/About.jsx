@@ -3,6 +3,13 @@ import { FaArrowRight } from 'react-icons/fa';
 import Container from '../components/Container/Container';
 import TopBanner from '../components/Shared/TopBanner/TopBanner';
 
+const data = [
+    { id: 1, img: "https://supportbrightviewtelecom.netlify.app/img/training-1.jpg", heading: "End to end service provider for telecom and IT Solutions", title: "IELTS Coaching", subtitle: "RF Survey for 2G, 3G and 4G telecom network." },
+    { id: 2, img: "https://supportbrightviewtelecom.netlify.app/img/training-2.jpg", heading: "EMI and EMF testing for tower radiation. Radiation testing drive testing and optimization", title: "Testing", subtitle: "EMI and EMF testing for tower radiation, Radiation testing, Drive test and optimization." },
+    { id: 3, img: "https://supportbrightviewtelecom.netlify.app/img/training-3.jpg", heading: "Install all kind of of equipments including microwaves, BTS, BSC, IBS, MSAN etc.", title: "Installing", subtitle: "Installation of all kinds of equipment including Microwave, BTS, BSC, IBS, MSAN etc." },
+    { id: 4, img: "https://supportbrightviewtelecom.netlify.app/img/training-4.jpg", heading: "Commissioning of various 2G, 3G and 4G equipments.", title: "Commissioning", subtitle: "Commissioning of various 2G, 3G and 4G equipments" },
+]
+
 const About = () => {
     return (
         <div>
@@ -39,16 +46,16 @@ const About = () => {
                         </div>
                         <div className='grid grid-cols-4 gap-8'>
                             {
-                                Array.from({ length: 4 }).map(x => (
-                                    <div className='h-[400px] rounded-xl border relative overflow-hidden group cursor-pointer'>
-                                        <img src="https://supportbrightviewtelecom.netlify.app/img/training-1.jpg" alt="" className='rounded-xl group-hover:scale-110 duration-300 h-full w-full object-cover object-center' />
+                                data.map(({ img, heading, subtitle, title, id }) => (
+                                    <div key={id} className='h-[400px] rounded-xl border relative overflow-hidden group cursor-pointer'>
+                                        <img src={img} alt="" className='rounded-xl group-hover:scale-110 duration-300 h-full w-full object-cover object-center' />
                                         <div className='absolute h-full w-full bg-gradient-to-b from-black to-slate-900 top-0 opacity-60 ' />
                                         <div className='absolute bottom-0 group-hover:hidden'>
-                                            <h3 className='text-2xl p-5 text-white font-bold'>End to end service provider for telecom and IT Solutions</h3>
+                                            <h3 className='text-2xl p-5 text-white font-bold'>{heading}</h3>
                                         </div>
                                         <div className='bg-pink-800 duration-300 h-0 absolute bottom-0 group-hover:h-1/2 w-full flex flex-col gap-3 group-hover:p-6  text-white'>
-                                            <h4 className='text-xl font-semibold'>IELTS Coaching</h4>
-                                            <p className='text-sm text-gray-300'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, tenetur.</p>
+                                            <h4 className='text-xl font-semibold'>{title}</h4>
+                                            <p className='text-sm text-gray-300'>{subtitle}</p>
                                             <button className='flex items-center w-fit'>
                                                 <span>Read More</span>
                                                 <FaArrowRight />
