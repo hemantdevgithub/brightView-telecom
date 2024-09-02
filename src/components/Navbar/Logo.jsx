@@ -5,8 +5,9 @@ import LogoText from "../Shared/LogoText/LogoText";
 const Logo = () => {
     return (
         <Link to={"/"}>
-            <h1 className="text-primary font-bold text-xl">
-                BrightView Telecom
+            <h1 className=" font-bold text-xl">
+                <span className="text-primary">BrightView</span>
+                <span className="text-primary">Telecom</span>
             </h1>
         </Link>
     );

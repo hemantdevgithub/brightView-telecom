@@ -2,8 +2,6 @@ import { redirect } from "react-router-dom";
 
 export const navUrls = [
     { id: 1, label: "Home", redirect: "/" },
-
-    { id: 2, label: "Home", redirect: "/home" },
     { id: 3, label: "About", redirect: "/about" },
     { id: 4, label: "Services", redirect: "/services" },
     { id: 5, label: "Clients", redirect: "/clients" },
