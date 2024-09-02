@@ -13,7 +13,7 @@ const data = [
 const About = () => {
     return (
         <div>
-            <TopBanner pageName={"About"} img={"https://supportbrightviewtelecom.netlify.app/about.jpg"} heading={"About Us"} />
+            <TopBanner pageName={"About"} img={"/Banners/about.jpg"} heading={"About Us"} />
             <Container>
                 <div className='py-10 font-poppins space-y-5'>
                     <h4 className='text-center text-xl font-semibold uppercase w-fit mx-auto pb-1 border-b-4 border-primary px-4'>who we are?</h4>

@@ -5,7 +5,7 @@ import TopBanner from '../components/Shared/TopBanner/TopBanner';
 const Awards = () => {
   return (
     <div>
-      <TopBanner pageName={"Our Awards"} img={"https://supportbrightviewtelecom.netlify.app/about.jpg"} heading={"Awards"} />
+      <TopBanner pageName={"Our Awards"} img={"/Banners/award.jpg"} heading={"Awards"} />
       <Container>
         <div className='py-10 grid grid-cols-3 gap-5  mx-auto'>
           {

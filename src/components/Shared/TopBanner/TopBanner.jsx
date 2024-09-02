@@ -3,11 +3,11 @@ import { FaArrowRight } from "react-icons/fa";
 const TopBanner = ({ img, heading, pageName, subHeading }) => {
     return (
         <div
-            className={`w-full h-[340px] bg-center  bg-cover bg-no-repeat relative`}
+            className={`w-full h-[470px] bg-center  bg-cover bg-no-repeat relative`}
         >
             <img
                 src={img}
-                className="w-full absolute h-full object-left object-cover "
+                className="w-full absolute h-full object-left object-center object-cover "
                 alt=""
             />
             {
