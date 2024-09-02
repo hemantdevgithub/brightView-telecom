@@ -1,70 +1,50 @@
 import React from 'react';
-import { Link, useLocation, useParams } from 'react-router-dom';
 import Container from '../components/Container/Container';
 import TopBanner from '../components/Shared/TopBanner/TopBanner';
-import { healthcareServices } from '../constants/services';
+
+
 
 const Services = () => {
-    const { redirect } = useParams();
-    const location = useLocation();
-    const filteredServices = healthcareServices.find(s => (s.redirect === redirect) || (s.id === location.state.id))
     return (
         <div>
-            <TopBanner heading={"Services"} img={"/Team/team.png"} />
+            <TopBanner pageName={"Services"} img={"https://supportbrightviewtelecom.netlify.app/about.jpg"} heading={"Services"} />
             <Container>
-                <div className='py-10 bg-[#fff] space-y-10'>
-                    <h1 className='text-center font-syne text-xl lg:text-3xl font-semibold text-primary first-letter:text-4xl'>{filteredServices.fullForm} Services
-                    </h1>
-                    <div className='flex flex-col lg:flex-row items-start justify-center gap-5'>
-                        <div className='w-full  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:mt-5'>
-                            {
-                                filteredServices.services.map(s => (
-                                    <Link
-                                        state={{ serviceId: filteredServices.id, subServiceId: s.id }}
-                                        to={`/services/${redirect}/${s.redirect}`}
-                                        key={s.id}>
-                                        <div className='bg-white p-8 flex flex-col gap-5 text-center border border-blue-500 rounded-xl items-center justify-center'>
-                                            <h4 className='text-center font-syne text-xl'>
-                                                {s.service}
-                                            </h4>
-                                            <p className='text-sm font-syne'>
-                                                {s.description}
-                                            </p>
-                                        </div>
-                                    </Link>
-                                ))
-                            }
-                        </div>
-                        {/* <div className='w-full lg:w-[30%] space-y-5'>
-                            <h3 className='text-2xl font-syne'>Case Studies</h3>
-                            <div className='flex flex-col gap-5'>
-                                {
-                                    caseStudies.filter(s => s.category === filteredServices.category).map(caseStudy => (
-                                        <Link
-                                            to={`/insights-details/${caseStudy.id}`}
-                                            state={{ id: caseStudy.id }}
-                                        >
-                                            <div className='font-syne space-y-3 group border-primary border rounded-md'>
-                                                <div className='overflow-hidden'>
-                                                    <img src={caseStudy.thumbnail} className='h-[230px] group-hover:scale-105 duration-300 object-cover' alt="case study images" />
-                                                </div>
-                                                <div className='px-5 space-y-3'>
-                                                    <p className='uppercase font-syne font-semibold text-orange-400 tracking-wider'>{caseStudy.category}</p>
-                                                    <h4 className='text-lg text-gray-600 font-semibold group-hover:text-primary duration-300'>
-                                                        {caseStudy.title}
-                                                    </h4>
-                                                    <p className='text-sm text-gray-600'>{caseStudy.date}</p>
-                                                </div>
-                                                <hr className='border' />
-                                            </div>
-                                        </Link>
-                                    ))
-                                }
-                            </div>
-                        </div> */}
+                <div className='py-10 font-poppins space-y-8'>
+                    <h4 className='text-center text-xl font-semibold uppercase w-fit mx-auto pb-1 border-b-4 border-primary px-4'>Our Services
+                    </h4>
+                    <div className='w-[60%] mx-auto space-y-5'>
+                        <h1 className='text-4xl font-semibold tracking-wide'>
+                            Enabling Your Immigration Successfully
+
+                        </h1>
+                        <p className='text-gray-500 space-y-2 *:block'>
+                            <span>Installation Of BTS, BSC, MSC, Server, Access Network, DWDM And SDH Network, GPON,FTTH Equipment Installation And Commissioning</span>
+
+                            <span>Installation Of Multi Service Access Network (Wire Line) Equipment Installation And Commissioning.</span>
+
+                            <span>Experience In RF Drive Test And Optimization, SCFT, SSCVT, EMF, NARDA Broadband Testing And NBM Activity.</span>
+
+                            <span>Good Experience In Huawei Optix 1832 X-8/16/7500/8800/9800 /500 /550 ,Alcatel Lucent _Nokia – 7750 SR-14s / 7750 SR-7s / 7750 SR-12e / 7250 IXR-R6 / 7210 SAS-K30 / 7210 SAS-MXP In OptiX Multi-Service Mini-WDM/OTN/OSN/CEN System Combines The OTN And WDM Features, Which Enables Customers To Integrate Multiple Access Transport Networks Into A Single Network</span>
+                        </p>
+                    </div>
+                    <div className='grid grid-cols-4 gap-5'>
+                        {
+                            Array.from({ length: 8 }).map(x => (
+                                <div className='rounded-xl overflow-hidden border'>
+                                    <img
+                                        className='h-[200px] w-full object-cover'
+                                        src="https://supportbrightviewtelecom.netlify.app/img/service-1.jpg" alt="" />
+                                    <div className='p-4'>
+                                        <h3 className='text-xl font-semibold'>Civil Work</h3>
+                                        <p className='text-sm text-gray-700'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ex, aut ipsa a doloremque vel, itaque enim distinctio </p>
+                                    </div>
+                                </div>
+                            ))
+                        }
                     </div>
                 </div>
             </Container>
+
         </div>
     );
 };

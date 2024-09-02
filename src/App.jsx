@@ -17,19 +17,4 @@ const App = () => {
     </Router >
   )
 };
-// const App = () => {
-//   const authCheck = useAuthCheck();
-//   return !authCheck ? (
-//     <Loader />
-//   ) : (
-//     <Router>
-//       <ScrollToTop />
-//       < Toaster />
-//       <Navbar />
-//       <RouterHandler />
-//       <Footer />
-//     </Router >
-//   )
-// };
-
 export default App;
