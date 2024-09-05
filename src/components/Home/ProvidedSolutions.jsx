@@ -38,7 +38,7 @@ const ProvidedSolutions = () => {
   return (
     <Container>
       <div className="container mx-auto py-12">
-        <div className="text-center mb-12" data-wow-delay="0.1s">
+        <div className="text-center  " data-wow-delay="0.1s">
           <div className="flex justify-center">
             <h5 className="text-lg font-semibold text-secondary bg-gray-100 px-4 py-2 rounded-full">
               Our Services

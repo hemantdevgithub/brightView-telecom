@@ -4,7 +4,7 @@ import Container from "../Container/Container";
 const WhoWeAre = () => {
   return (
     <Container>
-      <section className="flex flex-col md:flex-row justify-between items-center py-8 ">
+      <section className="flex flex-col md:flex-row justify-between items-center  ">
         {/* Left Side: Image */}
         <div className="w-full md:w-[40%]">
           <img
@@ -16,7 +16,7 @@ const WhoWeAre = () => {
 
         {/* Right Side: Content */}
         <div className="w-full md:w-1/2 py-5">
-          <div className="px-4">
+          <div className=" ">
             <div className="text-left mb-8" data-wow-delay="0.1s">
               <div className="mb-3">
                 <h5 className="text-lg font-semibold text-secondary bg-gray-100 px-4 py-2 rounded-full inline-block">

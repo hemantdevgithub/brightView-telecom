@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 import Container from "../Container/Container";
 const Hero = () => {
   return (
-    <div className="h-[400px] hero font-syne bg-[url(/Home/hero.jpg)] bg-center bg-cover w-full">
+    <div className="h-[400px] hero font-poppins bg-[url(/Home/hero.jpg)] bg-center bg-cover w-full">
       <Container>
         <div className="w-full lg:w-[65%] h-full gap-6 flex sm:text-center md:text-start flex-col items-center lg:items-start justify-center">
           <div className="bg-white/30 backdrop-blur-lg border border-white/20 shadow-lg p-6 rounded-lg space-y-6">
-            <h4 className="font-syne text-lg lg:text-3xl flex space-x-2   ">
+            <h4 className="font-poppins text-lg lg:text-3xl flex space-x-2   ">
               Welcome To
               <span className=" text-primary ml-3 font-semibold">
                 Brightview

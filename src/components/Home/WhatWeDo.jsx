@@ -4,10 +4,10 @@ import Container from "../Container/Container";
 const WhatWeDo = () => {
   return (
     <Container>
-      <section className="flex flex-col md:flex-row justify-between items-center py-8 ">
+      <section className="flex flex-col md:flex-row justify-between items-center   ">
         {/* Right Side: Content */}
         <div className="w-full md:w-1/2 py-5">
-          <div className="px-4">
+          <div className=" ">
             <div
               className="text-left"
               data-wow-delay="0.1s"

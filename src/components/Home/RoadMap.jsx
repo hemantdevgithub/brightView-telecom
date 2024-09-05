@@ -1,8 +1,11 @@
-import React from 'react';
+import React from "react";
 import { RiRoadMapFill } from "react-icons/ri";
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
-import Container from '../Container/Container';
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import Container from "../Container/Container";
 
 const roadmap = [
   {
@@ -10,7 +13,7 @@ const roadmap = [
     title: "Documenting Problem Statement",
     description: [
       "Define and articulate the specific challenges and issues faced by the organization.",
-      "Outline the scope and impact of identified problems."
+      "Outline the scope and impact of identified problems.",
     ],
   },
   {
@@ -18,7 +21,7 @@ const roadmap = [
     title: "Documenting Stakeholder Ecosystem",
     description: [
       "Identify and map key stakeholders within the organization.",
-      "Understand their roles, perspectives, and influence on the project."
+      "Understand their roles, perspectives, and influence on the project.",
     ],
   },
   {
@@ -26,7 +29,7 @@ const roadmap = [
     title: "Document KPIs",
     description: [
       "Define Key Performance Indicators (KPIs) to measure success.",
-      "Establish clear metrics aligned with organizational objectives."
+      "Establish clear metrics aligned with organizational objectives.",
     ],
   },
   {
@@ -34,7 +37,7 @@ const roadmap = [
     title: "Develop Project Plan",
     description: [
       "Create a comprehensive project plan outlining tasks, timelines, and resources.",
-      "Ensure alignment with organizational goals and objectives."
+      "Ensure alignment with organizational goals and objectives.",
     ],
   },
   {
@@ -42,7 +45,7 @@ const roadmap = [
     title: "Facilitate Stakeholder Interviews (Client Interviews)",
     description: [
       "Conduct interviews with stakeholders to gather insights and perspectives.",
-      "Ensure open communication and collaboration."
+      "Ensure open communication and collaboration.",
     ],
   },
   {
@@ -50,7 +53,7 @@ const roadmap = [
     title: "Analysis (Data Analysis)",
     description: [
       "Gather and analyze relevant data to identify trends, challenges, and opportunities.",
-      "Utilize data-driven insights to inform decision-making."
+      "Utilize data-driven insights to inform decision-making.",
     ],
   },
   {
@@ -58,7 +61,7 @@ const roadmap = [
     title: "Executive Reporting",
     description: [
       "Prepare comprehensive reports for executive review.",
-      "Highlight key findings and potential areas for improvement."
+      "Highlight key findings and potential areas for improvement.",
     ],
   },
   {
@@ -66,7 +69,7 @@ const roadmap = [
     title: "Submit Recommendations (Strategy Development)",
     description: [
       "Develop strategic recommendations based on analysis and stakeholder input.",
-      "Align recommendations with the overarching business strategy."
+      "Align recommendations with the overarching business strategy.",
     ],
   },
   {
@@ -74,7 +77,7 @@ const roadmap = [
     title: "Develop Implementation Plan",
     description: [
       "Outline a detailed plan for implementing recommended strategies.",
-      "Consider resource allocation, timelines, and potential challenges."
+      "Consider resource allocation, timelines, and potential challenges.",
     ],
   },
   {
@@ -82,7 +85,7 @@ const roadmap = [
     title: "Measure KPIs",
     description: [
       "Implement KPI tracking mechanisms to measure project and organizational success.",
-      "Continuously monitor and evaluate performance against established metrics."
+      "Continuously monitor and evaluate performance against established metrics.",
     ],
   },
   {
@@ -90,7 +93,7 @@ const roadmap = [
     title: "Document Knowledge Transition and Lessons Learnt",
     description: [
       "Capture and document insights gained throughout the project.",
-      "Facilitate knowledge transfer for ongoing improvement."
+      "Facilitate knowledge transfer for ongoing improvement.",
     ],
   },
   {
@@ -98,37 +101,33 @@ const roadmap = [
     title: "Closure",
     description: [
       "Ensure the successful completion of the project.",
-      "Conduct a comprehensive project closure, including a final review and evaluation."
+      "Conduct a comprehensive project closure, including a final review and evaluation.",
     ],
-  }
+  },
 ];
 
 const RoadMap = () => {
   return (
     <Container>
-      <div className='space-y-5 py-10'>
-        <h5 className='text-center font-syne text-xl font-semibold uppercase'>
+      <div className="space-y-5 py-10">
+        <h5 className="text-center font-poppins text-xl font-semibold uppercase">
           Our Roadmap
         </h5>
-        <div className='bg-gray-100 rounded-xl'>
-          <VerticalTimeline
-            lineColor='gray'
-          >
-            {roadmap.map(r => (
+        <div className="bg-gray-100 rounded-xl">
+          <VerticalTimeline lineColor="gray">
+            {roadmap.map((r) => (
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                contentStyle={{ background: '#1b2651', color: '#fff' }}
-                contentArrowStyle={{ borderRight: '10px solid orange' }}
-                iconStyle={{ background: '#1b2651', color: '#fff' }}
+                contentStyle={{ background: "#1b2651", color: "#fff" }}
+                contentArrowStyle={{ borderRight: "10px solid orange" }}
+                iconStyle={{ background: "#1b2651", color: "#fff" }}
                 icon={<RiRoadMapFill />}
               >
-                <div className='space-y-3'>
-                  <h1 className='text-xl font-semibold'>
-                    {r.title}
-                  </h1>
+                <div className="space-y-3">
+                  <h1 className="text-xl font-semibold">{r.title}</h1>
                   <hr />
-                  <ul className='list-disc ml-5 text-sm'>
-                    {r.description.map(d => (
+                  <ul className="list-disc ml-5 text-sm">
+                    {r.description.map((d) => (
                       <li>{d}</li>
                     ))}
                   </ul>

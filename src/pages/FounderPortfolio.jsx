@@ -9,12 +9,12 @@
 //         heading={"Founder"}
 //         // img={"https://www.sermo.com/wp-content/uploads/2023/01/best-medical-specialties-hero-min.jpg"}
 //       />
-      
+
 //       {/* <Container>
 //         <div className='my-10 flex flex-col-reverse lg:flex-row gap-5 items-center lg:w-[90%] mx-auto'>
 //           <div className='lg:w-[50%]'>
 //             <div className='space-y-5'>
-//               <h2 className='text-4xl font-bold font-syne text-primary'>
+//               <h2 className='text-4xl font-bold font-poppins text-primary'>
 //                 Sai Satyadeep Kotla
 //               </h2>
 //               <div className='h-2 w-[80px] group-hover:w-full duration-300 mt-3 bg-gradient-to-l to-[#291fbc] from-[#488fed]' />
@@ -29,7 +29,7 @@
 //           <div className='lg:w-[50%] flex flex-col justify-center items-center'>
 //             <img src="/sai.png" className='w-full h-full' alt="" />
 //             <Link to={'https://hemantdevgithub.github.io/portfolio1'} target='_blank'>
-//               <button className='bg-softBlue px-12 text-white font-syne py-2 rounded-xl'>Visit Portfolio</button>
+//               <button className='bg-softBlue px-12 text-white font-poppins py-2 rounded-xl'>Visit Portfolio</button>
 //             </Link> */}
 //           {/* </div> */}
 //         </div>

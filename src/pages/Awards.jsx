@@ -30,7 +30,7 @@ const Awards = () => {
             <PhotoProvider>
               <PhotoView src={x}>
                 <img
-                  className="h-[300px] w-full object-cover transition-transform duration-300 group-hover:scale-110 rounded-lg"
+                  className="h-[300px] w-full object-cover transition-transform duration-300 group-hover:scale-110 rounded-lg hover:cursor-pointer"
                   src={x}
                   alt=""
                 />
