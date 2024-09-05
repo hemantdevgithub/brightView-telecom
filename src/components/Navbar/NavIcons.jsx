@@ -21,9 +21,7 @@ const NavIcons = ({ isOpen, handleOpen, user }) => {
       <div
         className="lg:inline-block hidden
       "
-      >
-        {user ? <ProfileBtn user={user} /> : <NavBtn />}
-      </div>
+      ></div>
     </>
   );
 };
